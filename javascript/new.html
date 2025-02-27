@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script>
+$(document).ready(function(){
+ $("#sweet").click(function(){
+    $(".sweetbox").slideToggle("fast");
+  });
+  $("#sweet2").click(function(){
+    $(".colorbox").slideToggle("fast");
+  });
+  $("#sweet3").click(function(){
+    $(".fruitbox").slideToggle("fast");
+  });
+  $("#mysorepak").click(function(){
+ $("#mysore").slideToggle("fast");
+});
+$("#kesaribath").click(function(){
+ $("#kesari").slideToggle("fast");
+});
+$("#BesanLadoo").click(function(){
+ $("#besan").slideToggle("fast");
+});
+$("#Obbattu").click(function(){
+ $("#obb").slideToggle("fast");
+});
+$("#cpink").click(function(){
+ $("#pink").slideToggle("fast");
+});
+$("#cblue").click(function(){
+ $("#blue").slideToggle("fast");
+});
+
+$("#corange").click(function(){
+ $("#range").slideToggle("fast");
+});
+$("#cred").click(function(){
+ $("#red").slideToggle("fast");
+});
+$("#fapple").click(function(){
+ $("#apple").slideToggle("fast");
+});
+$("#fpine").click(function(){
+ $("#pine").slideToggle("fast");
+});
+$("#forange").click(function(){
+ $("#orange").slideToggle("fast");
+});
+$("#fmango").click(function(){
+ $("#mango").slideToggle("fast");
+});
+});
+    
+</script>
+<style>
+body{
+    background:url("images/back.webp");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    justify-content: center;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-left: 150px;
+}
+
+#sweet,#sweet2,#sweet3 {
+  width:90%;
+  height: 75px;
+  padding: 45px 5px 5px;
+  font-family:'Courier New', Courier, monospace;
+  font-size: 36px;
+  text-align: center;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+  border: solid 1px #ffffff;
+  border-radius: 40px;
+  border-width: 2px;
+  justify-content: center;
+  align-items: center;
+}
+#sweet:hover,#sweet2:hover,#sweet3:hover{
+  background-color: #ff7f90;
+  color: black;
+  font-size: 36px;
+  text-align: center;
+}
+
+
+
+.colorbox,.sweetbox,.fruitbox{
+  padding: 5px;
+  width:90%;
+  display: none;
+  font-size: 24px;
+  background-color: rgb(0, 0, 0);
+  border: solid 1px #ffffff;
+  color:rgb(255, 255, 255);
+  border-radius: 40px;
+  border-width: 2px;
+  text-align: center;
+  font-family:'Courier New', Courier, monospace;
+}
+.colorbox:hover,.sweetbox:hover,.fruitbox:hover{
+  backdrop-filter: blur(0.1px);
+  -webkit-backdrop-filter: blur(0.1px);
+    background: rgba(255, 255, 255, 0.742);
+    color: black;
+}
+pre,b{
+  font-family:'Courier New', Courier, monospace;
+  font-size: 20px;
+  
+}
+
+.wrap{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.742);
+    border:1px solid rgba(255,255,255,0.01);
+    border-radius:16px ;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color:#232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border:1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 290px;
+    padding:20px 35px;
+    width:90%;
+}
+.wrap2{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    background: rgba(255, 255, 255, 0.742);
+    border:1px solid rgba(255,255,255,0.01);
+    border-radius:16px ;
+    box-shadow: 0 4px 30px rgba(35,35,35,0.1);
+    color:#232323;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255,255,255,0.30);
+    border:1px solid rgba(255,255,255,0.34);
+    flex-basis: 400px;
+    height: 290px;
+    padding:20px 35px;
+    color: rgb(255, 255, 255);
+    width:90%;
+}
+
+#mysore{
+  background:url("images/mysore.webp") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  font-size: 24px;
+  padding: 50px;
+  display: none;
+  color:rgb(0, 0, 0);
+  width:83%;
+}
+#kesari{
+  background:url("images/kesari2.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 24px;
+  color:white;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  display: none;
+  width:83%;
+}
+#besan{
+  background:url("images/besan_laddu.webp") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-size: 24px;
+  color: white;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  display: none;
+  width:83%;
+}
+#obb{
+  background:url("images/Obbattu2.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  color: rgb(0, 0, 0);
+  padding: 50px;
+  font-size: 24px;
+  display: none;
+  width:83%;
+}
+#pink{
+  background:url("images/pink.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  display: none;
+  font-size: 24px;
+  width:83%;
+  
+}
+ #blue{
+  background:url("images/blue.avif") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  color: white;
+  border-radius: 40px;
+  padding: 50px;
+  display: none;
+  font-size: 24px;
+  width:83%;
+
+}
+#range{
+  background:url("images/orange.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  font-size: 24px;
+  display: none;
+  width:83%;
+}
+#red{
+  background:url("images/red.avif") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  font-size: 24px;
+  padding: 50px;
+  width:83%;
+  display: none;
+}
+#apple{
+  background:url("images/apple.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  font-size: 24px;
+  width:83%;
+  display: none;
+}
+#orange{
+  background:url("images/forange.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  font-size: 24px;
+  width:83%;
+  display: none;
+}
+#pine{
+  background:url("images/pine.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  padding: 50px;
+  border-radius: 40px;
+  font-size: 24px;
+  display: none;
+  width:83%;
+}
+#mango{
+  background:url("images/mango2.jpg") ;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  justify-content: center;
+  border-radius: 40px;
+  padding: 50px;
+  font-size: 24px;
+  display: none;
+  width:83%;
+  
+}
+
+</style>
+</head>
+
+
+
+<body>
+  <br><br><br>
+<div id="sweet">SWEETS</div>
+    <div class="sweetbox" id="mysorepak">MYSORE PAK </div>
+        <div id="mysore">
+          <div class="wrap">
+            <h1>MYSORE PAK</h1>
+            <pre><b>
+            Mysore pak is an Indian sweet prepared in ghee.
+            It originated in the city of Mysore, one of the
+            major cities in the Indian state of Karnataka.
+            It is made of generous amounts of ghee, sugar,
+            gram flour, and often cardamom.</b> </pre>
+        </div>
+        </div>
+    <div class="sweetbox" id="kesaribath">KESARI BATH</div> 
+        <div id="kesari" >
+          <div class="wrap2">
+          <h1>KESARI BATH</h1>
+          <pre><b>
+            Kesari bat or kesari baat is a sweet Indian food
+            that is common throughout the country.The classic
+            ingredients used for its preparation are semolina, 
+            sugar, ghee (usually),water, and milk. The sweet is 
+            more commonly known as Jonnadula Halwa in certain parts 
+            of northern India. </b></pre>
+        </div>
+        </div>
+    <div class="sweetbox" id="BesanLadoo">BESAN LADOO</div>
+        <div id="besan" >
+          <div class="wrap">
+          <h1>BESAN LADOO</h1>
+          <pre><b>
+            BESAN LADOO a premium and traditional Indian sweet
+            recipe made with chickpea flour, ghee and sugar.It 
+            is perhaps one of the traditional recipes passed on
+            by generations and is typically made during festival 
+            seasons. Generally, it is made with just 3 ingredients,
+            and a topping ofdry fruits, but can also be mixed with other flours.</b>
+          </pre>
+        </div> 
+        </div> 
+    <div class="sweetbox" id="Obbattu">OBATTU </div>
+        <div id="obb">
+          <div class="wrap">
+          <h1>OBATTU </h1>
+          <pre><b>
+            Obbattu is a traditional flatbread which enjoys popularity in
+            the states of Karnataka, Maharashtra, Gujarat and Goa. 
+            It generally has a sweet filling inside and is loaded 
+            with scrumptious flavors to relish. This South Indian
+            recipe along with it's pleasing flavors would be much appreciated 
+            by anybody who happened to have a sweet tooth.</b>
+            </pre>
+          </div>
+        </div>
+</div><br>
+
+
+<div id="sweet2">COLOURS</div>
+    <div class="colorbox" id="cpink">PINK</div>
+    <div id="pink" >
+      <div class="wrap">
+      <h1>PINK</h1>
+      <pre><b>
+          Pink colors are usually light or desaturated shades
+          of reds, roses,and magentas which are created on 
+          computer and television screens using the 
+          RGB color model and in printing with the CMYK color model.
+          As such, it is an arbitrary classification of color. </pre></b>
+      </div>
+    </div>
+    <div class="colorbox" id="cblue">BLUE</div>
+    <div id="blue">
+    <div class="wrap2">
+    <h1>BLUE</h1>
+    <pre><b>
+      Blue is one of the three primary colours in the RYB colour
+      model (traditional colour theory),as well as in the RGB 
+      (additive) colour model. It lies between violet and cyan on
+      the spectrum of visible light. Most blues contain a slight
+      mixture of other colours; azure contains some green, while
+      ultramarine contains some violet. </pre></b>
+    </div>
+  </div>
+
+    <div class="colorbox" id="corange">ORANGE</div>
+    <div id="range" ><div class="wrap">
+      <h1>ORANGE</h1>
+      <pre><b>
+        Orange is the colour between yellow and red on the
+        spectrum of visible light.The human eyes perceive
+        orange when observing light with a dominant wavelength between
+        roughly 585 and 620 nanometres. In traditional colour
+        theory, it is a secondary colour of pigments, produced 
+        by mixing yellow and red</pre></b>
+      </div>
+    </div>
+
+
+    <div class="colorbox" id="cred">RED</div> 
+    <div id="red">
+      <div class="wrap2">
+      <h1>RED</h1>
+      <pre><b>
+        Red is a rich color with an even richer history.
+        Use of the pigment can be traced way back to Ancient
+        Egypt where it was considered both a color of vitality
+        and celebration,as well as evil and destruction.
+        From here on, red was a staple hue throughout history, 
+        used in ancient Grecian murals,and heavily applied throughout art movements.</b> </pre>
+      </div></div><br>
+
+
+
+<div id="sweet3">FRUITS</div>
+  <div class="fruitbox" id="fapple">APPLE</div>
+    <div id="apple">
+      <div class="wrap2">
+      <h1>APPLE</h1>
+      <pre><b>
+        Apples are a good source of nutrients, including fiber,
+        vitamin C, and antioxidants which can help support 
+        healthy digestion, brain health, and weight management. 
+        There is evidence that apples can also protect against 
+        certain chronic diseases, including cancer, heart disease, and type 2 diabetes </b></pre>
+    </div></div>
+
+  <div class="fruitbox" id="forange">ORANGE</div>
+    <div id="orange">
+      <div class="wrap">
+      <h1>ORANGE</h1>
+      <pre><b>
+        An orange, also called sweet orange to distinguish it from 
+        the bitter orange, is the fruit of a tree in the family Rutaceae.
+        Botanically, this is the hybrid Citrus sinensis, between the pomelo 
+        and the mandarin orange.The chloroplast genome, and therefore the maternal line,
+        is that of pomelo.</b>
+        </pre>
+    </div></div>
+  <div class="fruitbox" id="fpine">PINEAPPLE</div>
+    <div id="pine">
+      <div class="wrap2">
+    <h1>PINEAPPLE</h1>
+    <pre><b>
+      Pineapple is native to tropical and subtropical America and
+      has been introduced elsewhere.The fruit has become a characteristic
+      ingredient in the meat, vegetable, fish, and rice dishes of
+      what is loosely termed Pan-Asian cuisine. The fruit is eaten fresh where 
+      available and in canned form worldwide.<b>
+      </pre>
+    </div>
+    </div>
+  <div class="fruitbox" id="fmango">MANGO</div>
+    <div id="mango">
+    <div class="wrap">
+    <h1>MANGO</h1>
+    <pre><b>
+      Mango is the National fruit of India and it is one of the most favourite fruits.
+      Mango is a tropical fruit, that is, it grows well in the warm climate of the 
+      tropics.Mostly mangoes are oval and the colour of mango skin varies from green,
+      yellow to red and green.A mango has one big seed and the mango seed is inedible.</b>
+      </pre>
+    </div>
+  </div>
+</div>
+</body>
+</html>
+
