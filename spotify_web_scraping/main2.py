@@ -3,7 +3,7 @@ import requests
 import spotipy
 from spotipy.oauth2 import SpotifyOAuth
 
-# Scraping Billboard 100
+
 date = input("Which year do you want to travel to? Type the date in this format YYYY-MM-DD: ")
 header = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:131.0) Gecko/20100101 Firefox/131.0"}
 billboard_url = "https://www.billboard.com/charts/hot-100/" + date
@@ -17,9 +17,9 @@ song_names = [song.getText().strip() for song in song_names_spans]
 sp = spotipy.Spotify(
     auth_manager=SpotifyOAuth(
         scope="playlist-modify-private",
-        redirect_uri="http://example.com",
-        client_id="938bbb865df44744bf784b5b3a4f4bc5",
-        client_secret="86c78dd4a8614257b218f9eec1c42c1e",
+        redirect_uri="spotify_url",
+        client_id="spotify_id",
+        client_secret="spotify_secret",
         show_dialog=True,
         cache_path="token.txt"
     )
