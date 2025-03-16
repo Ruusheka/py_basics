@@ -30,7 +30,7 @@ email_password = os.getenv("EMAIL_PASSWORD")
 practice_url = "https://appbrewery.github.io/instant_pot/"
 live_url = "https://www.amazon.com/dp/B075CYMYK6?psc=1&ref_=cm_sw_r_cp_ud_ct_FM9M699VKHTT47YD50Q6"
 
-response = requests.get(practice_url, headers=header)
+response = requests.get(live_url , headers=header)
 
 
 soup = BeautifulSoup(response.content, "html.parser")
@@ -62,5 +62,5 @@ if price_as_float < BUY_PRICE:
         connection.sendmail(
             from_addr=email_user,
             to_addrs=email_user,
-            msg=f"Subject:Amazon Price Alert!\n\n{message}\n{practice_url}".encode("utf-8")
+            msg=f"Subject:Amazon Price Alert!\n\n{message}\n{live_url }".encode("utf-8")
         )
